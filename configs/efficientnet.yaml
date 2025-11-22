@@ -1,0 +1,21 @@
+seed: 42
+classes: [plastic, glass, paper, metal, cardboard, organic, other]
+data:
+  root: data
+  image_size: 224
+  batch_size: 32
+  num_workers: 4
+model:
+  architecture: efficientnet_b0
+  pretrained: true
+train:
+  phase: full_finetune
+  epochs: 25
+  head_epochs: 3
+  learning_rate: 0.0003
+  backbone_learning_rate: 0.00003
+  weight_decay: 0.0001
+  label_smoothing: 0.1
+  class_weighted: true
+  early_stopping: 6
+
