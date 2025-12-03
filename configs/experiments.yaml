@@ -1,0 +1,7 @@
+experiments:
+  - {name: simple_cnn, architecture: simple_cnn, pretrained: false, phase: full_finetune, augment: false}
+  - {name: resnet18_head, architecture: resnet18, pretrained: true, phase: head_only, augment: true}
+  - {name: resnet50_full, architecture: resnet50, pretrained: true, phase: full_finetune, augment: true}
+  - {name: efficientnet_b0_full, architecture: efficientnet_b0, pretrained: true, phase: full_finetune, augment: true}
+  - {name: mobilenet_v3_small, architecture: mobilenet_v3_small, pretrained: true, phase: full_finetune, augment: true}
+
