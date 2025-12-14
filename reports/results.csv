@@ -1,0 +1,1 @@
+experiment,architecture,pretrained,phase,augment,class_weighted,accuracy,macro_f1,latency_ms,model_size_mb,params_m,seed
